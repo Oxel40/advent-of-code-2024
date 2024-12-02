@@ -11,7 +11,7 @@ pub fn main() !void {
     if (task) |task_num| {
         switch (try std.fmt.parseInt(u32, task_num, 10)) {
             1 => try task1.run(),
-            2 => try task2.run2(),
+            2 => try task2.run(),
             else => std.debug.print("Invalid task number {s}\n", .{task_num}),
         }
     } else {
