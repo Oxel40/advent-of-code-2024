@@ -1,0 +1,2 @@
+File.stream!("./input.txt")
+
